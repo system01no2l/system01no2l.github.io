@@ -11,7 +11,7 @@
   
   <title>
     
-      archive_a: 2022 
+      ERC721 
       
       
       |
@@ -114,68 +114,145 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2022</span>
-          </h2>
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">ERC721</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2022-11-13 20:32:15
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="Categories"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/Blockchain/" title="Blockchain">
+                    <b>#</b> Blockchain
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/blockchain-solidity/" title="blockchain, solidity">
+                    <b>#</b> blockchain, solidity
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2022/07/22/loop/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2022-11-13 20:32:15
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="Categories"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/Blockchain/" title="Blockchain">
+                        <b>#</b> Blockchain
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/blockchain-solidity/" title="blockchain, solidity">
+                        <b>#</b> blockchain, solidity
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="ERC721">
-        <div class="time-m-d">11-13</div>
-        <div class="title">
-          <a href="/2022/11/13/ERC721/">
-            <span>ERC721</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-      <div class="post-item" title="loop">
-        <div class="time-m-d">07-22</div>
-        <div class="title">
-          <a href="/2022/07/22/loop/">
-            <span>loop</span>
-          </a>
-        </div>
-      </div>
+
     
-      <div class="post-item" title="Tổng quan và giới thiệu về solidity">
-        <div class="time-m-d">07-22</div>
-        <div class="title">
-          <a href="/2022/07/22/blockchain/">
-            <span>Tổng quan và giới thiệu về solidity</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="docker">
-        <div class="time-m-d">07-22</div>
-        <div class="title">
-          <a href="/2022/07/22/docker/">
-            <span>docker</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Hexo">
-        <div class="time-m-d">07-22</div>
-        <div class="title">
-          <a href="/2022/07/22/hello-world/">
-            <span>Hexo</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         
 <div class="footer">
@@ -447,6 +524,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + ERC721 + '&url=' + https%3A%2F%2Fsystem01no2l.github.io%2F2022%2F11%2F13%2FERC721%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://system01no2l.github.io/2022/11/13/ERC721/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
