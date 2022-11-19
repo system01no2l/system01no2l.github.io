@@ -11,7 +11,7 @@
   
   <title>
     
-      Cookie and session 
+      JSON Web Tokens (jwt) 
       
       
       |
@@ -159,50 +159,27 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">Cookie and session</div>
+      <div class="post-title">JSON Web Tokens (jwt)</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime" title="Update time"></i>
-          2022-11-19 16:09:20
+          2022-11-19 16:50:22
         </span>
         
       </div>
       <div class="markdown-body">
-        <h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><h3 id="Khai-niem"><a href="#Khai-niem" class="headerlink" title="Khái niệm"></a>Khái niệm</h3><p>Cookie là một đoạn văn bản ghi thông tin được tạo ra và lưu trên trình duyệt của máy người dùng. Cookie thường được tạo ra khi người dùng truy cập một website, cookie sẽ ghi nhớ những thông tin như tên đăng nhập, mật khẩu, các tuỳ chọn do người dùng lựa chọn đi kèm. Các thông tin này được lưu trong máy tính để nhận biết người dùng khi truy cập vào một trang web. Khi người dùng lần đầu tiên truy cập một trang web, trang web sẽ gửi các dữ liệu đến máy tính của người dùng dưới dạng cookie.</p>
-<h3 id="Hoat-dong"><a href="#Hoat-dong" class="headerlink" title="Hoạt động"></a>Hoạt động</h3><p><img src="/images/cookie.png" alt="Cookie!" title="Cookie"></p>
-<h2 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h2><h3 id="Khai-niem-1"><a href="#Khai-niem-1" class="headerlink" title="Khái niệm"></a>Khái niệm</h3><p>Session là một khái niệm phổ biến được dùng trong lập trình các website có kết nối với cơ sở dữ liệu database. Đặc biệt các chức năng như đăng nhập, đăng xuất người dùng sẽ khó có thể thực hiện được nếu không sử dụng session. Khi người dùng tắt máy hoặc đăng xuất khỏi chương trình, các giá trị session sẽ tự động bị xóa.</p>
-<h3 id="Hoat-dong-1"><a href="#Hoat-dong-1" class="headerlink" title="Hoạt động"></a>Hoạt động</h3><p><img src="/images/session.png" alt="Session!" title="Session"></p>
-<h2 id="Cookie-and-Session"><a href="#Cookie-and-Session" class="headerlink" title="Cookie and Session"></a>Cookie and Session</h2><table>
-<thead>
-<tr>
-<th>Cookie</th>
-<th>Session</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Lưu trữ trên trình duyệt của người dùng</td>
-<td>Khônglưu trữ trong trình duyệt của người dùng</td>
-</tr>
-<tr>
-<td>Lưu trữ ở phía máy khách</td>
-<td>Lưu trữ ở phía máy chủ, lưu ở dạng nhị phân hoặc mã hóa và chỉ có thể được giải mã tại máy chủ</td>
-</tr>
-<tr>
-<td>Dễ dàng sửa đổi khi chúng được lưu trữ ở phía khách hàng</td>
-<td>Không dễ dàng sửa đổi vì chúng được lưu trữ ở phía máy chủ</td>
-</tr>
-<tr>
-<td>Dữ liệu cookie có sẵn trong trình duyệt của chúng ta đến khi hết hạn. Kích thước tệp tối đa cho cookie là 4KB</td>
-<td>Dữ liệu session có sẵn cho trình duyệt chạy. Sau khi đóng trình duyệt sẽ mất thông tin session.</td>
-</tr>
-</tbody></table>
+        <ul>
+<li>Là một chuẩn mở (RFC 7519)</li>
+<li>Dưới dạng đối tượng JSON</li>
+<li>JWTs có thể được ký bằng một thuật toán bí mật (với thuật toán HMAC) hoặc một public &#x2F; private key sử dụng mã hoá RSA.</li>
+</ul>
 
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
-              <a href="/2022/11/13/build-hexo/" target="_self">
+              <a href="/2022/11/19/cookie-and-session/" target="_self">
                 <i class="iconfont icon-chevronleft"></i>
                 <span>Prev</span>
               </a>
@@ -211,39 +188,17 @@
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime" title="Update time"></i>
-              2022-11-19 16:09:20
+              2022-11-19 16:50:22
             </span>
             
           </div>
           <div class="post-foot-prev">
-            
-              <a href="/2022/11/19/token-jwt/" target="_self">
-                <span>Next</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
             
           </div>
         </div>
       
     </div>
     
-  <div id="btn-catalog" class="btn-catalog">
-    <i class="iconfont icon-catalog"></i>
-  </div>
-  <div class="post-catalog hidden" id="catalog">
-    <div class="title">Contents</div>
-    <div class="catalog-content">
-      
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Cookie"><span class="toc-text">Cookie</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Khai-niem"><span class="toc-text">Khái niệm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hoat-dong"><span class="toc-text">Hoạt động</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session"><span class="toc-text">Session</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Khai-niem-1"><span class="toc-text">Khái niệm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hoat-dong-1"><span class="toc-text">Hoạt động</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cookie-and-Session"><span class="toc-text">Cookie and Session</span></a></li></ol>
-      
-    </div>
-  </div>
-
-  
-<script src="/js/catalog.js"></script>
-
-
-
 
     
       <div class="comments-container">
@@ -537,12 +492,12 @@
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Cookie%20and%20session + '&url=' + https%3A%2F%2Fsystem01no2l.github.io%2F2022%2F11%2F19%2Fcookie-and-session%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + JSON%20Web%20Tokens%20(jwt) + '&url=' + https%3A%2F%2Fsystem01no2l.github.io%2F2022%2F11%2F19%2Ftoken-jwt%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://system01no2l.github.io/2022/11/19/cookie-and-session/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://system01no2l.github.io/2022/11/19/token-jwt/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
