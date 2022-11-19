@@ -11,7 +11,7 @@
   
   <title>
     
-      archive_a: 2022/11 
+      Cookie and session 
       
       
       |
@@ -114,68 +114,144 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2022</span>
-          </h2>
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Cookie and session</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2022-11-19 16:09:20
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><h3 id="Khai-niem"><a href="#Khai-niem" class="headerlink" title="Khái niệm"></a>Khái niệm</h3><h3 id="Hoat-dong"><a href="#Hoat-dong" class="headerlink" title="Hoạt động"></a>Hoạt động</h3><p><img src="/images/cookie.png" alt="Cookie!" title="Cookie"></p>
+<h2 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h2><h3 id="Khai-niem-1"><a href="#Khai-niem-1" class="headerlink" title="Khái niệm"></a>Khái niệm</h3><h3 id="Hoat-dong-1"><a href="#Hoat-dong-1" class="headerlink" title="Hoạt động"></a>Hoạt động</h3><p><img src="/images/session.png" alt="Session!" title="Session"></p>
+<h2 id="Cookie-and-Session"><a href="#Cookie-and-Session" class="headerlink" title="Cookie and Session"></a>Cookie and Session</h2><table>
+<thead>
+<tr>
+<th>Cookie</th>
+<th>Session</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lưu trữ trên trình duyệt của người dùng</td>
+<td>lưu trữ trong trình duyệt của người dùng</td>
+</tr>
+<tr>
+<td>lưu trữ ở phía máy khách</td>
+<td>lưu trữ ở phía máy chủ</td>
+</tr>
+<tr>
+<td>dễ dàng sửa đổi khi chúng được lưu trữ ở phía khách hàng</td>
+<td>không dễ dàng sửa đổi vì chúng được lưu trữ ở phía máy chủ</td>
+</tr>
+<tr>
+<td>Dữ liệu cookie có sẵn trong trình duyệt của chúng ta đến khi hết hạn. Có limit</td>
+<td>Dữ liệu session có sẵn cho trình duyệt chạy. Sau khi đóng trình duyệt sẽ mất thông tin session.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2022/11/13/build-hexo/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2022-11-19 16:09:20
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="Cookie and session">
-        <div class="time-m-d">11-19</div>
-        <div class="title">
-          <a href="/2022/11/19/cookie-and-session/">
-            <span>Cookie and session</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-      <div class="post-item" title="Build and deploy hexo">
-        <div class="time-m-d">11-13</div>
-        <div class="title">
-          <a href="/2022/11/13/build-hexo/">
-            <span>Build and deploy hexo</span>
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Cookie"><span class="toc-text">Cookie</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Khai-niem"><span class="toc-text">Khái niệm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hoat-dong"><span class="toc-text">Hoạt động</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session"><span class="toc-text">Session</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Khai-niem-1"><span class="toc-text">Khái niệm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hoat-dong-1"><span class="toc-text">Hoạt động</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cookie-and-Session"><span class="toc-text">Cookie and Session</span></a></li></ol>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-      <div class="post-item" title="Event loop là gì ?">
-        <div class="time-m-d">07-22</div>
-        <div class="title">
-          <a href="/2022/07/22/event-loop/">
-            <span>Event loop là gì ?</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Sơ lược về solidity">
-        <div class="time-m-d">07-22</div>
-        <div class="title">
-          <a href="/2022/07/22/blockchain/">
-            <span>Sơ lược về solidity</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Sơ lược về docker">
-        <div class="time-m-d">07-22</div>
-        <div class="title">
-          <a href="/2022/07/22/docker/">
-            <span>Sơ lược về docker</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         
 <div class="footer">
@@ -447,6 +523,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Cookie%20and%20session + '&url=' + https%3A%2F%2Fsystem01no2l.github.io%2F2022%2F11%2F19%2Fcookie-and-session%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://system01no2l.github.io/2022/11/19/cookie-and-session/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
